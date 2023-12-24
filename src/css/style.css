@@ -206,6 +206,20 @@ body {
 }
 
 /* ---- CSS ---- */
+.mgT16 {
+  margin-top: 24px;
+}
+
+/* ゆっくり表示 */
+@keyframes textanime {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 .textContainer {
   margin-top: -200px;
@@ -216,29 +230,34 @@ body {
   font-size: 20px;
   line-height: 200%;
   z-index: 100;
+  animation-name: textanime;
+  /*keyname*/
+  animation-duration: 5s;
+  /*最大再生時間*/
+  animation-iteration-count: initial
+    /*繰り返しなし*/
 }
 
-.mgT16 {
-  margin-top: 24px;
+.lergeText {
+  font-family: serif;
+  font-size: 40px;
+  line-height: 200%;
+  z-index: 100;
 }
 
-/* ゆっくり表示 */
-@keyframes textanime
-{
- 0%{
-  opacity: 0;
- }
-
- 100%{
-  opacity: 1;
- }
+.staticText {
+  font-family: serif;
+  font-size: 20px;
+  line-height: 200%;
+  z-index: 100;
 }
 
-.text
-{
- animation-name: textanime;/*keyname*/
- animation-duration:5s;/*最大再生時間*/
- animation-iteration-count:initial/*繰り返しなし*/
+.golden{
+  font-weight: 900;
+  background: linear-gradient(104deg, #D0A900 -7.35%, #FFF9E6 0.33%, #D2AD0C 17.1%, #F8EEC5 26.19%, #D7B420 33.87%, #D0A900 33.89%, #EFDE99 49.25%, #D0A900 52.74%, #F0D780 63.92%, #D0A900 68.11%, #F8EEC6 79.29%, #D4B015 87.68%, #F4E6AF 92.57%, #D9B82C 104.45%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 /* 次へボタン */
@@ -281,23 +300,27 @@ body {
 
 /* ボタンの位置 */
 /* 上 */
-.locateTop{
+.locateTop {
   bottom: 25%;
 }
+
 /* 中上 */
-.locateMiddleTop{
+.locateMiddleTop {
   bottom: 20%;
 }
+
 /* 中 */
-.locateMiddle{
+.locateMiddle {
   bottom: 15%;
 }
+
 /* 中下 */
-.locateMiddleBottom{
+.locateMiddleBottom {
   bottom: 10%;
 }
+
 /* 下 */
-.locateBottom{
+.locateBottom {
   bottom: 5%;
 }
 
@@ -307,10 +330,12 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .lateOpen {
   opacity: 0;
   animation: fadeIn 1s forwards;
@@ -318,15 +343,16 @@ body {
 }
 
 /* 喜びウサギ画像 */
-.plesureRabbit{
+.plesureRabbit {
   width: 140px;
   height: 140px;
   position: fixed;
   left: 5%;
   top: 3%;
 }
+
 /* 月ウサギ画像 */
-.moonRabbit{
+.moonRabbit {
   width: 140px;
   height: 140px;
   position: fixed;
@@ -334,3 +360,10 @@ body {
   top: 5%;
 }
 
+/* 花火用 */
+.fireWorks{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
