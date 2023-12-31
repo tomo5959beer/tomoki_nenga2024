@@ -327,7 +327,7 @@ background-clip: text;
 /* ボタンの位置 */
 /* 上 */
 .locateTop {
-  bottom: 25%;
+  bottom: 26%;
 }
 
 /* 中上 */
@@ -337,17 +337,17 @@ background-clip: text;
 
 /* 中 */
 .locateMiddle {
-  bottom: 15%;
+  bottom: 14%;
 }
 
 /* 中下 */
 .locateMiddleBottom {
-  bottom: 10%;
+  bottom: 8%;
 }
 
 /* 下 */
 .locateBottom {
-  bottom: 5%;
+  bottom: 0%;
 }
 
 
