@@ -3,11 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Nenga Site 2024</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <link rel="stylesheet" media="screen" href="css/style.css">
 </head>
 
@@ -21,11 +22,15 @@
           年賀サイト2024
         </div>
       </div>
+      <div id="dragon" class="menuSVG">
+        <lottie-player src="https://lottie.host/a0e2e701-f143-4d1f-8e7d-0b6b24111b76/L74AJ1fAys.json"
+          background="transparent" speed="0.7" style="width: 240px; height: 240px;" loop autoplay></lottie-player>
+      </div>
       <div class="buttonContainer">
         <a href="omikuji.html" class="menuBtn locateMiddleTop">特製おみくじを引く</a>
         <a href="page0.html" class="menuBtn locateMiddleBottom">新年のご挨拶</a>
       </div>
-      
+
     </div>
   </div>
 
@@ -33,6 +38,7 @@
   <!-- scripts -->
   <script src="../particles.js"></script>
   <script src="js/snow.js"></script>
+  <script src="js/dragon.js"></script>
 
 </body>
 

@@ -205,6 +205,15 @@ body {
   height: 100%;
 }
 
+.fadeinOmikuji{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  animation: fadeOut 8s forwards;
+  z-index: 9999;
+}
+
 /* ---- CSS ---- */
 .mgT16 {
   margin-top: 24px;
@@ -218,6 +227,18 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+
+/* ゆっくり消える */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -298,6 +319,11 @@ background-clip: text;
   letter-spacing: 0.1em;
 }
 
+.omikujiBtn{
+  border: none;
+  font-size: 1rem;
+}
+
 /* ボタンの位置 */
 /* 上 */
 .locateTop {
@@ -366,4 +392,13 @@ background-clip: text;
   top: 35%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+  z-index: -5;
+}
+
+.star{
+  color:#ffd518
+}
+
+.menuSVG{
+  top: 140px;
 }

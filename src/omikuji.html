@@ -3,33 +3,81 @@
 
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>Nenga Site 2024</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" media="screen" href="css/style.css">
-  <script type="text/javascript">
-    <!--
+  <!-- <script type="text/javascript">
+
+    const elem = document.getElementById('draw');
+    const element = document.getElementById('start');
+    const rotateItem = document.getElementById('rotate');
+
     const mylink = new Array(
       "daikichi.html",
-      "kichi.html",
-      "omikuji/kyou.html",
+      "kichi_love.html",
+      "kichi_work.html",
+      "kichi_money.html",
+      "chukichi.html",
+      "suekichi.html",
+      "kyou.html",
+      "daikyou.html",
     );
     function random_jump() {
       let i = Math.floor(Math.random() * mylink.length);
       location.href = mylink[i];
     }
-    // -->
-    </script>
+
+    elem.addEventListener('click', function () {
+        tatefuri();
+    });
+
+    function tatefuri() {
+      element.animate(
+        [{
+          transform: 'translateY(0)'
+        }, {
+          transform: 'translateY(-30px)'
+        }, {
+          transform: 'translateY(0)'
+        }], {
+        duration: 700,
+        iterations: 3
+      });
+      setTimeout(function () {
+        kaiten();
+      }, 2400);
+    }
+
+    function kaiten() {
+      element.animate(
+        [{
+          transform: 'rotate(0deg)'
+        }, {
+          transform: 'rotate(180deg)'
+        }], {
+        duration: 700,
+        easing: 'linear',
+        fill: 'forwards'
+      });
+      setTimeout(function () {
+        random_jump();
+      }, 1000);
+    }
+  </script> -->
 </head>
 
 <body>
   <div id="particles-js"></div>
   <div id="wrapper">
     <div style="z-index: 100;">
-      <a href="javascript:random_jump();">おみくじを引く</a>
+      <p id="start" class="start">
+        <img id="rotate" width="160" src="img/omikuji.png" alt="おみくじ">
+      </p>
       
+      <button id="draw" class="nextBtn locateBottom omikujiBtn">おみくじを引く！</button>
     </div>
   </div>
 
@@ -37,6 +85,7 @@
   <!-- scripts -->
   <script src="../particles.js"></script>
   <script src="js/snow.js"></script>
+  <script src="js/omikuji.js"></script>
 
 </body>
 
