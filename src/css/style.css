@@ -271,6 +271,7 @@ body {
   font-size: 12px;
   line-height: 200%;
   z-index: 100;
+  display: none;
 }
 
 .golden{
@@ -337,7 +338,7 @@ background-clip: text;
 
 /* 中 */
 .locateMiddle {
-  bottom: 14%;
+  bottom: 13%;
 }
 
 /* 中下 */
